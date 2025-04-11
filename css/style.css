@@ -142,3 +142,34 @@ body {
   color: var(--text-color);
   background-color: #000;
 }
+
+/* ******************************* */
+/* ***** page__component-size ***** */
+
+.component-size__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.component-size__button {
+  --unit: 10px 20px;
+  padding: var(--unit);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #2a68e4;
+  border-radius: 4px;
+}
+
+.component-size__button--small {
+  --unit: 5px 10px;
+}
+
+.component-size__button--large {
+  --unit: 15px 30px;
+}
