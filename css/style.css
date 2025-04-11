@@ -91,32 +91,32 @@ body {
   text-align: center;
 }
 
-.section__text {
-  font-size: var(--section-font-size);
+.header-section__text:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 /* ******************************* */
 /* ***** page__mdn ***** */
 
-.block-mdn__text--first {
+.content-section__text--first {
   background-color: var(--first-color);
   color: var(--second-color);
 }
 
-.block-mdn__text--second {
+.content-section__text--second {
   background-color: var(--second-color);
   color: var(--first-color);
 }
 
-.block__mdn-container {
+.content-section__inner {
   --first-color: #290;
 }
 
-.block-mdn__text--third {
+.content-section__text--third {
   background-color: var(--first-color);
   color: var(--second-color);
 }
 
-.block-mdn__text:not(:last-child) {
+.content-section__text:not(:last-child) {
   margin-bottom: 10px;
 }
