@@ -2,6 +2,8 @@
   /* page__mdn */
   --first-color: #16f;
   --second-color: #ff7;
+  /* page__default */
+  --default-color: #2196f3;
 }
 
 html {
@@ -119,4 +121,11 @@ body {
 
 .content-section__text:not(:last-child) {
   margin-bottom: 10px;
+}
+
+/* ******************************* */
+/* ***** page__default ***** */
+
+.default-content__text {
+  color: var(--main-color, var(--default-color));
 }
