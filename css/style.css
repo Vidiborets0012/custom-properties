@@ -98,21 +98,21 @@ body {
 /* ******************************* */
 /* ***** page__mdn ***** */
 
-.content-section__text--first {
+.mdn-content__text--first {
   background-color: var(--first-color);
   color: var(--second-color);
 }
 
-.content-section__text--second {
+.mdn-content__text--second {
   background-color: var(--second-color);
   color: var(--first-color);
 }
 
-.content-section__inner {
+.mdn-content__inner {
   --first-color: #290;
 }
 
-.content-section__text--third {
+.mdn-content__text--third {
   background-color: var(--first-color);
   color: var(--second-color);
 }
