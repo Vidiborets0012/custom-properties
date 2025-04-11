@@ -1,3 +1,9 @@
+:root {
+  /* page__mdn */
+  --first-color: #16f;
+  --second-color: #ff7;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -15,6 +21,7 @@ html {
 *::after {
   display: inline-block;
 }
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -58,4 +65,58 @@ body {
   line-height: 1.6;
   color: #000;
   background-color: #fff;
+}
+
+.page__title {
+  margin-bottom: 50px;
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section__header {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section__text {
+  font-size: var(--section-font-size);
+}
+
+/* ******************************* */
+/* ***** page__mdn ***** */
+
+.block-mdn__text--first {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+
+.block-mdn__text--second {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+
+.block__mdn-container {
+  --first-color: #290;
+}
+
+.block-mdn__text--third {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+
+.block-mdn__text:not(:last-child) {
+  margin-bottom: 10px;
 }

@@ -14,7 +14,30 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="page"></main>
+    <main class="page">
+      <h1 class="page__title">custom properties</h1>
+      <section class="page__mdn mdn section">
+        <div class="mdn__container">
+          <div class="section__header">
+            <h2 class="section__title title">Приклад MDN</h2>
+            <p class="section__text">Використано глобальні та локальні змінні.</p>
+          </div>
+          <div class="mdn__block block-mdn">
+            <p class="block-mdn__text block-mdn__text--first">
+              Цей параграф має містити синій фон та жовтий текст.
+            </p>
+            <p class="block-mdn__text block-mdn__text--second" id="secondParagraph">
+              Цей параграф має містити жовтий фон та синій текст.
+            </p>
+            <div class="block__mdn-container" id="container">
+              <p class="block-mdn__text block-mdn__text--third" id="thirdParagraph">
+                Цей параграф має містити зелений фон та жовтий текст.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
