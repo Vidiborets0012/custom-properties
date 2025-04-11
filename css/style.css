@@ -173,3 +173,35 @@ body {
 .component-size__button--large {
   --unit: 15px 30px;
 }
+
+/* ******************************* */
+/* ***** page__resize ***** */
+
+.resize-content__box-title {
+  margin-bottom: 20px;
+}
+
+.resize-content__inner {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.resize-content__box-box {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a68e4;
+}
+
+.resize-content__box-box--resize {
+  /* width: 600px;
+  height: 100px; */
+  --size: 600px;
+  --aspect-ratio: 6; /* 600 / 100 = 6 */
+  width: var(--size);
+  height: calc(var(--size) / var(--aspect-ratio));
+}
