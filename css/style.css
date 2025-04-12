@@ -212,13 +212,15 @@ body {
 .grid-content__inner-basic,
 .grid-content__inner-basic1 {
   --item-width: 300px;
+  --gap: 16px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--item-width), 1fr));
-  gap: 16px;
+  gap: var(--gap);
 }
 
 .grid-content__inner-basic1.grid-content__inner-basic2 {
   --item-width: 500px;
+  --gap: 40px;
 }
 
 .grid-content__inner:not(:last-child) {
