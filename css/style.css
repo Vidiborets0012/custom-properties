@@ -4,6 +4,8 @@
   --second-color: #ff7;
   /* page__default */
   --default-color: #2196f3;
+  /* page__gradient */
+  --primary-gradient: linear-gradient(150deg, #235ad1, #23d1a8);
 }
 
 html {
@@ -233,4 +235,36 @@ body {
   align-items: center;
   height: 300px;
   background-color: var(--default-color);
+}
+
+/* ******************************* */
+/* ***** page__gradient ***** */
+
+.gradient-content__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.gradient-content__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 6500px;
+  block-size: 200px;
+}
+
+/* .gradient-content__box-basic {
+  background-image: var(--primary-gradient);
+} */
+
+.gradient-content__box-basic,
+.gradient-content__box-basic1 {
+  --angle: 150deg;
+  background-image: linear-gradient(var(--angle), #235ad1, #23d1a8);
+}
+
+.gradient-content__box-basic1.gradient-content__box-basic2 {
+  --angle: -150deg;
 }
