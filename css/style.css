@@ -255,9 +255,9 @@ body {
   block-size: 200px;
 }
 
-/* .gradient-content__box-basic {
+.gradient-content__box-basic {
   background-image: var(--primary-gradient);
-} */
+}
 
 .gradient-content__box-basic,
 .gradient-content__box-basic1 {
@@ -267,4 +267,36 @@ body {
 
 .gradient-content__box-basic1.gradient-content__box-basic2 {
   --angle: -150deg;
+}
+
+/* ******************************* */
+/* ***** page__calculations ***** */
+
+.calculations-content__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calculations__box {
+  --size: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(var(--size, 1) * 30px);
+  height: calc(var(--size, 1) * 30px);
+  border-radius: 50%;
+  background-color: var(--default-color);
+}
+
+.calculations__box--small {
+  --size: 2;
+}
+
+.calculations__box--medium {
+  --size: 3;
+}
+
+.calculations__box--large {
+  --size: 4;
 }
