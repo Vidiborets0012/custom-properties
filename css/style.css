@@ -7,6 +7,16 @@
   /* page__gradient */
   --primary-gradient: linear-gradient(150deg, #235ad1, #23d1a8);
   /* page__js */
+  --sun: 1392000px;
+  --mercury: 4879px;
+  --venus: 12103px;
+  --earth: 12742px;
+  --mars: 6780px;
+  --jupiter: 139822px;
+  --saturn: 116464px;
+  --uranus: 50724px;
+  --neptune: 49244px;
+  --divider: 1450;
 }
 
 html {
