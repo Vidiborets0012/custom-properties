@@ -6,6 +6,7 @@
   --default-color: #2196f3;
   /* page__gradient */
   --primary-gradient: linear-gradient(150deg, #235ad1, #23d1a8);
+  /* page__js */
 }
 
 html {
@@ -299,4 +300,59 @@ body {
 
 .calculations__box--large {
   --size: 4;
+}
+
+/* ******************************* */
+/* ***** page__js ***** */
+
+.js-content {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 4000px;
+  overflow-x: scroll;
+}
+
+.sphere {
+  border-radius: 50%;
+  margin: 5px;
+  background-position: center;
+  background-size: cover;
+}
+
+.sun {
+  background-image: url(../images/sun.png);
+}
+
+.mercury {
+  background-image: url(../images/mercury.png);
+}
+
+.venus {
+  background-image: url(../images/venus.png);
+}
+
+.earth {
+  background-image: url(../images/earth.png);
+}
+
+.mars {
+  background-image: url(../images/mars.png);
+}
+
+.jupiter {
+  background-image: url(../images/jupiter.png);
+}
+
+.saturn {
+  background-image: url(../images/saturn.png);
+}
+
+.uranus {
+  background-image: url(../images/uranus.png);
+}
+
+.neptune {
+  background-image: url(../images/neptune.png);
 }
