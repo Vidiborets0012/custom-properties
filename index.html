@@ -121,6 +121,39 @@
           </div>
         </div>
       </section>
+
+      <section class="page__grid grid section">
+        <div class="section__container">
+          <div class="section__header header-section">
+            <h2 class="header-section__title title">Налаштування розмірів Grid-елементів</h2>
+            <p class="header-section__text">
+              CSS-змінні можуть виявитися надзвичайно корисними при проектуванні макетів сторінок на
+              основі CSS Grid.
+            </p>
+            <p class="header-section__text">
+              Уявіть, що потрібно зробити так, щоб Grid-контейнер виводив би дочірні елементи,
+              ґрунтуючись на заздалегідь заданій ширині елементів.
+            </p>
+            <p class="header-section__text">
+              Замість того щоб створювати клас для кожного варіанта представлення елементів, що
+              призведе до дублювання CSS-коду, це завдання можна вирішити, скориставшись
+              CSS-змінними.
+            </p>
+          </div>
+          <div class="section__content grid-section grid-content">
+            <div class="grid-content__inner grid-content__inner-basic">
+              <div class="grid-content__box">--item-width: 300px;</div>
+              <div class="grid-content__box">--item-width: 300px;</div>
+              <div class="grid-content__box">--item-width: 300px;</div>
+            </div>
+            <div class="grid-content__inner grid-content__inner-basic1 grid-content__inner-basic2">
+              <div class="grid-content__box">--item-width: 500px;</div>
+              <div class="grid-content__box">--item-width: 500px;</div>
+              <div class="grid-content__box">--item-width: 500px;</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="js/main.js"></script>
   </body>

@@ -205,3 +205,30 @@ body {
   width: var(--size);
   height: calc(var(--size) / var(--aspect-ratio));
 }
+
+/* ******************************* */
+/* ***** page__grid ***** */
+
+.grid-content__inner-basic,
+.grid-content__inner-basic1 {
+  --item-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--item-width), 1fr));
+  gap: 16px;
+}
+
+.grid-content__inner-basic1.grid-content__inner-basic2 {
+  --item-width: 500px;
+}
+
+.grid-content__inner:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.grid-content__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: var(--default-color);
+}
